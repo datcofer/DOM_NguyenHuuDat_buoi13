@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!-- MAIN CSS  -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <div class="container baiTap_1">
+        <h2 class="text-success">Bài tập 1: Tính tiền lương nhân viên</h2>
+        <div class="mb-3">
+            <label for="" class="form-label">Số lương một ngày làm:</label>
+            <input type="text" class="form-control w-25 border-5 border-success" name="" id="luongMotNgay"
+                aria-describedby="helpId" placeholder="Nhập vào lương một ngày làm" />
+
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label">Số ngày làm</label>
+            <input type="text" class="form-control w-25 border-5 border-success" name="" id="soNgayLam"
+                aria-describedby="helpId" placeholder="Nhập vào số ngày làm" />
+
+        </div>
+        <button class="btn btn-success mb-3">Tính tiền</button>
+        <p class="bg-success text-white bg-opacity-75 p-3 w-25" id="ketQua">Tiền lương nhân viên là: </p>
+    </div>
+    <div class="container baiTap_2">
+        <h2 class="text-warning mt-5">Bài tập 2: Tính giá trị trung bình</h2>
+        <div class="mb-3">
+            <label for="" class="form-label">Số thứ nhất:</label>
+            <input type="text" class="form-control w-25 border-5 border-dark" name="" id="soThuNhat"
+                aria-describedby="helpId" placeholder="Nhập vào số thứ nhất" />
+
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label">Số thứ hai:</label>
+            <input type="text" class="form-control w-25 border-5 border-dark" name="" id="soThuHai"
+                aria-describedby="helpId" placeholder="Nhập vào số thứ hai" />
+
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label">Số thứ ba:</label>
+            <input type="text" class="form-control w-25 border-5 border-dark" name="" id="soThuBa"
+                aria-describedby="helpId" placeholder="Nhập vào số thứ ba" />
+
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label">Số thứ tư:</label>
+            <input type="text" class="form-control w-25 border-5 border-dark" name="" id="soThuTu"
+                aria-describedby="helpId" placeholder="Nhập vào số thứ tư" />
+
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label">Số thứ năm:</label>
+            <input type="text" class="form-control w-25 border-5 border-dark" name="" id="soThuNam"
+                aria-describedby="helpId" placeholder="Nhập vào số thứ Năm" />
+
+        </div>
+        <button class="btn btn-warning mb-3">Tính giá trị trung bình</button>
+        <p class="bg-warning text-black bg-opacity-75 p-3 w-25" id="ketQua_2">giá trị trung bình của 5 số là: </p>
+    </div>
+    <div class="container baiTap_3">
+        <h2 class="text-danger mt-5">Bài tập 3: Quy đổi tiền </h2>
+        <div class="mb-3">
+            <label for="" class="form-label">Số tiền USD:</label>
+            <input type="text" class="form-control w-25 border-5 border-danger" name="" id="soTienUSD"
+                aria-describedby="helpId" placeholder="Nhập vào số tiền USD" />
+        </div>
+        <button class="btn btn-danger mb-3">Quy đổi tiền</button>
+        <p class="bg-danger text-black bg-opacity-75 p-3 w-50" id="ketQua_3">Kết quả:</p>
+    </div>
+    <div class="container baiTap_4">
+        <h2 class="text-primary mt-5">Bài tập 4: Tính diện tích, chu vi hình chữ nhật</h2>
+        <div class="mb-3">
+            <label for="" class="form-label">Chiều dài:</label>
+            <input type="text" class="form-control w-25 border-5 border-primary" name="" id="chieuDai"
+                aria-describedby="helpId" placeholder="Nhập vào chiều dài" />
+
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label">Chiều rộng:</label>
+            <input type="text" class="form-control w-25 border-5 border-primary" name="" id="chieuRong"
+                aria-describedby="helpId" placeholder="Nhập vào chiều rộng" />
+
+        </div>
+        <div class="btn_ketQua d-flex mb-3">
+            <button class="btn btn-primary me-4">Tính</button>
+            <button class="btn btn-dark" id="btn_reset"> Reset</button>
+        </div>
+        <p class="bg-primary text-black bg-opacity-75 p-3 w-50" id="ketQua_4">Kết quả: </p>
+    </div>
+    <div class="container baiTap_5">
+        <h2 class="text-secondary mt-5">Bài tập 5: Tính tổng 2 ký số </h2>
+        <div class="mb-3">
+            <label for="" class="form-label">Số có 2 chữ số:</label>
+            <input type="text" class="form-control w-25 border-5 border-secondary" name="" id="soHaiChuSo" min="10"
+                max="99" aria-describedby="helpId" placeholder="Nhập vào số có hai chữ số" />
+        </div>
+        <div class="btn_BT5 d-flex mb-3">
+            <button class="btn btn-secondary me-4">Tính tổng</button>
+            <button class="btn btn-danger" id="btn_clear">Clear</button>
+        </div>
+        <p class="bg-danger text-black bg-opacity-75 p-3 w-25" id="ketQua_5">Kết Quả : </p>
+    </div>
+
+
+
+
+
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
